@@ -1,4 +1,4 @@
-# 📸 DBMS Photo - Modern Photo Management System
+# 🏠 Ads Property - Modern Real Estate Company Profile
 
 <div align="center">
 
@@ -8,9 +8,9 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 
-**A modern, responsive photo management system built with Laravel, Inertia.js, and React**
+**A modern, responsive real estate company profile website built with Laravel, Inertia.js, and React**
 
-[🚀 Live Demo](#) • [📖 Documentation](#) • [ Report Bug](#)
+[🚀 Live Demo](#) • [📖 Documentation](#) • [🐛 Report Bug](#)
 
 </div>
 
@@ -18,19 +18,21 @@
 
 ## ✨ Features
 
-- 🔐 **Modern Authentication** - Clean login interface with form validation
+- 🏠 **Modern Company Profile** - Professional real estate company website
 - 📱 **Responsive Design** - Works perfectly on desktop, tablet, and mobile
 - ⚡ **Fast Development** - Hot reloading with Vite for instant feedback
--  **Beautiful UI** - Modern design with Tailwind CSS
--  **SPA Experience** - Single Page Application with Inertia.js
-- 🌐 **Indonesian Support** - Localized interface in Indonesian
+- 🎨 **Beautiful UI** - Modern design with Tailwind CSS and Framer Motion
+- 🌐 **SPA Experience** - Single Page Application with Inertia.js
 - 🛡️ **Security First** - Built with Laravel's security best practices
+- 📧 **Contact Forms** - Interactive contact forms for client inquiries
+- 🏢 **Property Showcase** - Featured properties display section
 
 ## 🛠️ Tech Stack
 
 - **Backend**: Laravel 11
 - **Frontend**: React 18 + Inertia.js
 - **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
 - **Build Tool**: Vite
 - **Database**: MySQL/PostgreSQL/SQLite
 - **Authentication**: Laravel Sanctum (ready to implement)
@@ -60,13 +62,13 @@ npm --version
 git --version
 ```
 
-##  Quick Start
+## 🚀 Quick Start
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Trieser/dbms-photo.git
-cd dbms-photo
+git clone https://github.com/Trieser/adsproperty.git
+cd adsproperty
 ```
 
 ### 2. Install Dependencies
@@ -97,7 +99,7 @@ Edit `.env` file and update database settings:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=dbms_photo
+DB_DATABASE=adsproperty
 DB_USERNAME=your_username
 DB_PASSWORD=your_password
 ```
@@ -106,7 +108,7 @@ DB_PASSWORD=your_password
 
 ```bash
 # Create database (run in MySQL/phpMyAdmin)
-CREATE DATABASE dbms_photo;
+CREATE DATABASE adsproperty;
 
 # Run migrations
 php artisan migrate
@@ -138,6 +140,61 @@ php artisan serve
 ## 🌐 Access the Application
 
 - **URL**: `http://localhost:8000`
-- **Default Route**: Login page
+- **Home Page**: Modern company profile with property showcase
 - **Admin Panel**: Coming soon...
+
+## 📁 Project Structure
+
+```
+adsproperty/
+├── app/
+│   ├── Http/Controllers/    # Laravel controllers
+│   ├── Models/             # Eloquent models
+│   └── Providers/          # Service providers
+├── resources/
+│   └── js/
+│       ├── Components/     # React components
+│       ├── Layouts/        # Layout components
+│       └── Pages/          # Page components
+├── routes/
+│   └── web.php            # Web routes
+└── database/
+    ├── migrations/         # Database migrations
+    └── seeders/           # Database seeders
+```
+
+## 🎨 Customization
+
+### Colors & Branding
+The website uses a modern indigo color scheme. To customize:
+1. Edit `resources/js/Pages/Welcome.jsx`
+2. Update Tailwind CSS classes
+3. Modify color variables in your CSS
+
+### Content
+Update company information, services, and contact details in:
+- `resources/js/Pages/Welcome.jsx` - Main content
+- Database seeders for dynamic content
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📞 Support
+
+For support, email info@adsproperty.com or create an issue in this repository.
+
+---
+
+<div align="center">
+Made with ❤️ by Ads Property Team
+</div>
 
